@@ -8,5 +8,68 @@
 <body>
     <header><h1>Listas - exercício 02</h1></header><hr>
     <header><h2>Lista ordenada</h2></header>
+    <ol>
+    <li>item 1</li>
+    <li>item 2</li>
+        <ol>
+            <li>subitem 1 do item 2</li><!--(li{item $ item})*3-->
+            <li>subitem 2 do item 2</li>
+            <li>subitem 3 do item 2</li>
+            <ol>
+                <li>subitem 1 do subitem 3</li>
+                <li>subitem 2 do subitem 3</li>
+                <li>subitem 3 do subitem 3</li>
+            </ol>
+        </ol>
+    <li>item 3</li>
+    <li>item 4</li>
+        <ol>
+            <li>subitem 1 do item 4</li>
+            <ol>
+                <li>subitem 1 do subitem 1 do item 4</li>
+            </ol>
+            <li>subitem 1 do item 4</li>
+        </ol>
+    <li>item 5</li> 
+    </ol>
+    <hr><!-- essa tag é uma linha horizontal-->
+    <header><h2>Lista não ordenada</h2></header>
+    <ul>
+    <li>item 1</li>
+    <li>item 2</li>
+        <ul>
+            <li>subitem 1 do item 2</li><!--(li{item $ item})*3-->
+            <li>subitem 2 do item 2</li>
+            <li>subitem 3 do item 2</li>
+            <ul>
+                <li>subitem 1 do subitem 3</li>
+                <li>subitem 2 do subitem 3</li>
+                <li>subitem 3 do subitem 3</li>
+            </ul>
+        </ul>
+    <li>item 3</li>
+    <li>item 4</li>
+        <ul>
+            <li>subitem 1 do item 4</li>
+            <ul>
+                <li>subitem 1 do subitem 1 do item 4</li>
+            </ul>
+            <li>subitem 1 do item 4</li>
+        </ul>
+    <li>item 5</li> 
+    </ul>
+    <hr><!-- essa tag é uma linha horizontal-->
+    <header><h2>Lista de definição</h2></header>
+    <dl><!--Lista de definição-->
+        <dt>Pudim de leite</dt><!--Título da lista de definição-->
+        <dl>
+            <dt>Ingredientes</dt>
+            <dd>1 lata de leite condensado</dd><!--Definição dos dados (itens)-->
+            <dd>3 ovos inteiros</dd>
+            <dd>1 lata de leite (medida da lata de leite condensado)</dd>
+            <dd>1 xícara (chá) de açúcar</dd>
+            <dd>&#189;xícara de água</dd>
+        </dl>
+    </dl>
 </body>
 </html>
