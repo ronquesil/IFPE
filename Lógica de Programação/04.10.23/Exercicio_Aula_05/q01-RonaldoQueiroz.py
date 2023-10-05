@@ -11,11 +11,8 @@ def calcula_credito(saldo_medio):
     valor_credito = saldo_medio * percentual_credito
     return valor_credito
 
-# Entrada de dados
 saldo_medio = float(input("Digite o saldo médio do cliente: ").replace(',', '.'))
 
-# Chamada da função
 valor_credito = calcula_credito(saldo_medio)
 
-# Saída de dados
 print(f"O valor do crédito concedido ao cliente é: R$ {valor_credito:.2f}")

@@ -1,4 +1,3 @@
-# Dicionário para armazenar os preços das frutas
 precos = {
     1: {'nome': 'Maçã', 'preco_ate_5kg': 7.00, 'preco_acima_5kg': 5.80},
     2: {'nome': 'Pêra', 'preco_ate_5kg': 11.80, 'preco_acima_5kg': 8.50},
@@ -8,14 +7,11 @@ precos = {
     6: {'nome': 'Cebola', 'preco_ate_5kg': 4.50, 'preco_acima_5kg': 2.40},
 }
 
-# Receber o código e a quantidade da fruta
 codigo = int(input())
 quantidade = float(input())
 
-# Inicializar a variável para o preço total
 preco_total = 0
 
-# Calcular o preço total com base na quantidade e no código da fruta
 if codigo in precos:
     if quantidade <= 5:
         preco_total = quantidade * precos[codigo]['preco_ate_5kg']
