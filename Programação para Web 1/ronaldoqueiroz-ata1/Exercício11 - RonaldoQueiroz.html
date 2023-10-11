@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercício 11 - Formulário</title>
+</head>
+<body>
+	<header>
+		<h1>Exercício 11 - Formulário</h1>
+		<h2><code>&lt;input type="radio" /&gt;</code> e <code>&lt;input type="checkbox" /&gt;</code></h2>
+	</header><hr/>
+	<form method="post" action="">
+		<fieldset>
+			<legend>Opções de escolha</legend>
+			<fieldset>
+				<legend>Sexo: </legend>
+				<label for="feminino"><input type="radio" name="sexo" value="Feminino" />Feminino </label>
+				<label for="masculino"><input type="radio" name="sexo" value="Masculino" />Masculino </label>
+			</fieldset>
+			<fieldset>
+				<legend>Áreas de interresse: </legend>
+				<input type="checkbox" name="interresse" value="Moda" />Moda
+				<input type="checkbox" name="interresse" value="Esporte" checked="checked" />Esporte
+				<input type="checkbox" name="interresse" value="Música" />Música
+				<input type="checkbox" name="interresse" value="Dança" disabled="disabled" />Dança
+			</fieldset>
+			<input type="submit" value="Enviar" />
+		</fieldset>
+	</form>
+	<footer><address>copyright &copy;Vitor Cruz.</address></footer>
+</body>
+</html>
