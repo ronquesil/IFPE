@@ -1,21 +1,18 @@
 def is_prime(n):
-    if n < 2:
+    if n <= 1:
         return False
     for i in range(2, int(n ** 0.5) + 1):
         if n % i == 0:
             return False
     return True
 
-prime_sum = 0
+soma_primos = 0
 
 while True:
-    try:
-        num = int(input())
-        if num == 0:
-            break
-        if is_prime(num):
-            prime_sum += num
-    except ValueError:
-        print("Por favor, digite um número inteiro.")
+    numero = int(input())
+    if numero == 0:
+        break
+    if is_prime(numero):
+        soma_primos += numero
 
-print(prime_sum)
+print(soma_primos)
