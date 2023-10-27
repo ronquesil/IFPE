@@ -1,0 +1,79 @@
+:root{
+	--red1: #ef9a9a;
+	--red2: #ff8a80;
+	--red3: #e57350;
+	--red4: #f44336;
+	--gray1: rgb(125,125,125);
+	--gray2: rgb(225,225,225);
+	--gray3: #eceff1;
+	--gray4: #cfd8dc;
+	--bluegray1: hsl(200,17%,68%);
+	--bluegray2: #546e7a;
+	--bluegray3: hsl(200,30%,31%);
+	--bluegray4: rgb(38,50,56);
+	--branco: #ffffff;
+	--textoGeral: "Roboto", sans-serif;
+	--textoMenu: "Roboto Condensed", sans-serif;
+	--textoBotaoTitulo: "Montserrat", sans-serif;
+}
+*,*::after,*::before{box-sizing: border-box;}
+body{
+	font-family: var(--textoGeral);
+	color: var(--gray1);
+	background-color: var(--gray2);
+}
+
+/* aplicação do flexbox */
+div#topo, nav#menu-principal ul{
+	display: flex;
+}
+div#header{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 30em;
+	background-image: url("../slider/slider-01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom: 4px solid var(--red2);
+}
+div#topo{
+	gap: 16em;
+	padding-top: 2em;
+}
+/* image replacement */
+header h1#logo{
+	background-image: url("../imagens/logoProDesign-header.svg");
+	background-repeat: no-repeat;
+	width: 200px;height: 82px;
+}
+header h1#logo a{
+	display: block;
+	height: 100%;
+	text-indent: -999999em;
+}
+/* formatar fomulario */
+input[type="text"]{
+	outline: none;
+	color: var(--gray1);
+	width: 21vw;
+	padding: 0 8px;
+	font-size: 0.875em;
+}
+input[type="submit"]{
+	color: var(--branco);
+	background-color: var(--red4);
+	width: 6vw;
+	font-size: .65em;
+	padding: 0;
+	font-family: var(--textoBotaoTitulo);
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+input[type="text"],input[type="submit"]{
+	height: 4vh; border: none;
+	vertical-align: middle;
+}
