@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #4CBB17; /* Cor do cabeçalho e rodapé */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    display: flex; /* Flexbox no conteúdo principal */
+    min-height: calc(100vh - 40px); /* Altura total menos cabeçalho e rodapé */
+}
+
+article {
+    flex: 3; /* Proporção do artigo em relação ao aside */
+    background-color: #90EE90; /* Cor de fundo do artigo */
+    padding: 20px;
+}
+
+aside {
+    display: flex;
+    flex: 2; /* Proporção do aside em relação ao artigo */
+    flex-direction: column; /* Itens do aside em coluna */
+    background-color: #8FBC8F; /* Cor de fundo do aside */
+    padding: 10px;
+}
+
+aside div {
+    background-color: #FFFFE0; /* Cor de fundo dos divs no aside */
+    margin: 10px;
+    flex: 1; /* Todos os divs com a mesma proporção */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer {
+    background-color: #4CBB17; /* Cor do rodapé */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

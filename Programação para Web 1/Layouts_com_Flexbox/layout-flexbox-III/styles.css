@@ -1,0 +1,57 @@
+
+/* CSS reset to remove default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flex container for the entire page layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Style for the header and footer */
+header, footer {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Main content area where flex is also applied */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sidebar styles */
+nav, aside {
+    background-color: #8BC34A; /* Light green */
+    color: white;
+    padding: 1em;
+    width: 20%; /* Adjust the width as needed */
+}
+
+/* Style for the article which contains the flex items */
+article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 1em;
+    flex: 1; /* Take the remaining space */
+}
+
+/* Style for the individual flex items in the article */
+article div {
+    background-color: #FFEB3B; /* Yellow */
+    border: 1px solid #cddc39; /* Light green for border to match the design */
+    padding: 1em;
+    margin: 1em;
+    flex: 0 1 20%; /* Adjust the basis and grow/shrink as needed */
+}
