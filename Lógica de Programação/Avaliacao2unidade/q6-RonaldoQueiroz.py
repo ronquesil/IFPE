@@ -6,7 +6,7 @@ def find_top_scorer(file_path):
         for line in file:
             parts = line.strip().split()
             name = parts[0]
-            goals = sum(map(int, parts[1:]))  # Convertendo os gols para inteiros e somando
+            goals = sum(map(int, parts[1:]))
 
             if goals > max_goals:
                 max_goals = goals
@@ -15,7 +15,7 @@ def find_top_scorer(file_path):
     return top_scorer
 
 if __name__ == "__main__":
-    file_path = 'gols.dat'  # Substitua por seu caminho de arquivo
+    file_path = file_path = r'C:/Users/ronal/OneDrive/Área de Trabalho/Repositório/IFPE/Lógica de Programação/Avaliacao2unidade/gols.dat'  # Substitua por seu caminho de arquivo
     top_scorer = find_top_scorer(file_path)
     with open('artilheiro.dat', 'w') as output_file:
         output_file.write(top_scorer)

@@ -16,20 +16,16 @@ def find_max_min(matrix):
     return max_value, max_position, min_value, min_position
 
 def main():
-    # Lendo as dimensões da matriz
     M, N = map(int, input().split())
     
-    # Lendo os elementos da matriz
     print()
     matrix = []
     for _ in range(M):
         row = list(map(int, input().split()))
         matrix.append(row)
 
-    # Encontrando o maior e o menor elemento e suas posições
     max_value, max_position, min_value, min_position = find_max_min(matrix)
 
-    # Mostrando os resultados
     print(f"MAIOR = {max_value} - POSIÇÃO = {max_position}")
     print(f"MENOR = {min_value} - POSIÇÃO = {min_position}")
 
