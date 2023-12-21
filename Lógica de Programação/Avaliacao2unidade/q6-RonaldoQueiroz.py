@@ -15,7 +15,10 @@ def find_top_scorer(file_path):
     return top_scorer
 
 if __name__ == "__main__":
-    file_path = file_path = r'C:/Users/ronal/OneDrive/Área de Trabalho/Repositório/IFPE/Lógica de Programação/Avaliacao2unidade/gols.dat'  # Substitua por seu caminho de arquivo
-    top_scorer = find_top_scorer(file_path)
-    with open('artilheiro.dat', 'w') as output_file:
+    input_file_path = r'C:\Users\ronal\OneDrive\Área de Trabalho\Repositório\IFPE\Lógica de Programação\Avaliacao2unidade\gols.dat'
+    output_file_path = 'artilheiro.dat'
+
+    top_scorer = find_top_scorer(input_file_path)
+
+    with open(output_file_path, 'w') as output_file:
         output_file.write(top_scorer)
