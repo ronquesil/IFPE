@@ -1,0 +1,479 @@
+:root {
+    --fundo-amarelo: rgb(245, 245, 219, 0.95);
+    --fundo-verde: rgb(144, 196, 109, 0.95);
+    --fundo-azul: rgb(135, 206, 250, 0.95);
+    --fundo-cinza: rgb(220, 220, 220, 0.95);
+    --fundo-rosa: rgb(255, 182, 193, 0.95);
+    --fundo-preto: #000;
+    --fundo-branco: #fff;
+    --borda-padrao: 1px solid #000;
+  }
+  
+  h2,
+  h3,
+  h4 {
+    font-family: "Petrona", serif;
+    text-align: center;
+    margin: auto;
+  }
+  
+  h2 {
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  h3 {
+    font-weight: 600;
+    font-size: 35px;
+  }
+  
+  h4 {
+    font-weight: 400;
+    font-size: 25px;
+  }
+  
+  p {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 600;
+    text-align: justify;
+    line-height: 1.3;
+    font-size: 13px;
+  }
+  
+  main {
+    background-image: url("img/img_de_fundo.jpg");
+    display: grid;
+    grid-template-areas:
+      "header"
+      "section_somos"
+      "section_fazemos"
+      "section_adote"
+      "section_form"
+      "footer";
+  }
+  
+  .header {
+    grid-area: header;
+  }
+  .section_somos {
+    grid-area: section_somos;
+  }
+  .section_fazemos {
+    grid-area: section_fazemos;
+  }
+  .section_adote {
+    grid-area: section_adote;
+  }
+  .footer {
+    grid-area: footer;
+  }
+  
+  .header {
+    background-color: var(--fundo-amarelo);
+    display: grid;
+    grid-template-areas:
+      "logo"
+      "nav"
+      "pesquisa";
+  }
+  
+  header figure {
+    grid-area: logo;
+  }
+  header nav {
+    grid-area: nav;
+  }
+  header form {
+    grid-area: pesquisa;
+  }
+  
+  header figure,
+  header nav,
+  header form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header figure img {
+    width: 250px;
+    padding: 15px;
+  }
+  
+  header ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+    width: 250px;
+  }
+  
+  header ul a {
+    text-decoration: none;
+    color: var(--fundo-preto);
+    border-bottom: none none none;
+    border-radius: 3vw;
+    padding: 10px 25px;
+    transition: 1s;
+  }
+  
+  header ul a:hover {
+    cursor: pointer;
+    transition: 1s;
+    color: var(--fundo-branco);
+    background-color: var(--fundo-preto);
+    border: 1px solid var(--fundo-preto);
+    border-radius: 25px;
+    font-size: 18px;
+  }
+  
+  header form {
+    display: flex;
+    flex-flow: row nowrap;
+    border: solid 1px;
+    border-radius: 3vw;
+    padding: 5px 10px;
+    margin: 15px auto 15px auto;
+    width: 250px;
+  }
+  
+  header form img {
+    height: 15px;
+    padding-right: 10px;
+  }
+  
+  header input {
+    border: none;
+    border-radius: 15px;
+    padding-left: 5px;
+    background-color: transparent;
+    height: 15px;
+    width: 100%;
+  }
+  
+  .section_somos {
+    background-color: var(--fundo-verde);
+    display: grid;
+    grid-template-areas:
+      "header"
+      "logo";
+    padding: 10px;
+  }
+  
+  .section_somos header,
+  .section_somos figure {
+    margin: auto;
+  }
+  
+  .section_somos header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-evenly;
+    gap: 10px;
+  }
+  
+  .section_somos header p {
+    width: 95%;
+    margin: auto;
+  }
+  
+  .bnt {
+    width: 100%;
+  }
+  
+  .bnt ul {
+    display: flex;
+    flex-flow: row;
+    margin-top: 5px;
+    justify-content: space-between;
+  }
+  
+  .bnt ul li {
+    box-shadow: none;
+    padding: 7px 20px 7px 20px;
+    border-radius: 15px;
+    border: 1px solid #000;
+    background-color: rgb(245, 245, 219);
+    transition: 1s;
+  }
+  
+  .bnt ul li:hover {
+    cursor: pointer;
+    transition: 1s;
+    background-color: #000;
+    color: rgb(245, 245, 219);
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    width: 250px;
+  }
+  
+  .logo img {
+    width: 95%;
+  }
+  
+  .section_fazemos {
+    background-color: var(--fundo-azul);
+    display: grid;
+    grid-template-areas:
+      "header"
+      "container";
+    padding: 15px;
+  }
+  
+  .section_fazemos header {
+    grid-area: header;
+  }
+  .section_fazemos .container {
+    grid-area: container;
+  }
+  
+  .section_fazemos header,
+  .section_fazemos div,
+  .section_fazemos section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section_fazemos div {
+    flex-flow: row wrap;
+    gap: 15px;
+  }
+  
+  .section_fazemos section {
+    border: 2px solid var(--fundo-preto);
+    border-radius: 15px;
+    padding: 15px;
+    width: 250px;
+    height: 250px;
+    margin: 15px 10px;
+  }
+  
+  .section_fazemos section figure img {
+    height: 150px;
+    padding-bottom: 10px;
+  }
+  
+  .section_adote {
+    background-color: var(--fundo-cinza);
+    display: grid;
+    grid-template-areas:
+      "header"
+      "adote";
+    padding: 15px;
+  }
+  
+  .section_adote header {
+    grid-area: header;
+  }
+  .section_adote div {
+    grid-area: adote;
+  }
+  
+  .section_adote header,
+  .section_adote div section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .section_adote div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 15px 0 15px;
+  }
+  
+  .section_adote div section {
+    border: 2px solid var(--fundo-preto);
+    padding: 15px;
+    border-radius: 15px;
+    gap: 8px;
+  }
+  
+  .section_adote div figure img {
+    height: 170px;
+    max-width: 220px;
+  }
+  
+  .section_form {
+    background-color: var(--fundo-rosa);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .section_form header {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 20px;
+  }
+  
+  .section_form form {
+    display: grid;
+    grid-template-areas:
+      "nome email"
+      "textarea textarea"
+      "enviar enviar";
+    width: 60vw;
+    gap: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .nome {
+    grid-area: nome;
+    width: 30vw;
+  }
+  
+  .nome input {
+    width: 28vw;
+    border: 1px solid var(--fundo-preto);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  .email {
+    grid-area: email;
+    width: 30vw;
+  }
+  
+  .email input {
+    width: 28vw;
+    border: 1px solid var(--fundo-preto);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  .textarea {
+    grid-area: textarea;
+    width: 60vw;
+  }
+  
+  .textarea textarea {
+    width: 60vw;
+    border: 1px solid var(--fundo-preto);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  #enviar {
+    grid-area: enviar;
+    width: 60vw;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid var(--fundo-preto);
+    background-color: rgb(245, 245, 219);
+    font-size: 15px;
+    transition: 1s;
+  }
+  
+  #enviar:hover {
+    cursor: pointer;
+    transition: 1s;
+    background-color: var(--fundo-preto);
+    color: rgb(245, 245, 219);
+    font-size: 18px;
+  }
+  
+  .footer {
+    background-color: var(--fundo-amarelo);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (min-width: 425px) {
+    header ul {
+      flex-flow: row;
+      justify-content: center;
+    }
+  }
+  
+  @media (min-width: 800px) {
+    .header {
+      grid-template-areas:
+        "logo pesquisa"
+        "nav nav";
+    }
+    .section_somos {
+      grid-template-areas: "header logo";
+    }
+  
+    h2,
+    h3,
+    h4 {
+      margin: 0;
+    }
+  
+    .section_somos header p {
+      width: 500px;
+    }
+  
+    .logo {
+      width: 250px;
+    }
+  
+    .logo img {
+      width: 100%;
+    }
+  }
+  @media (min-width: 1000px) {
+    .header {
+      grid-template-areas: "logo nav pesquisa";
+      gap: 15px;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    h2 {
+      font-size: 20px;
+    }
+  
+    h3 {
+      font-size: 45px;
+    }
+  
+    h4 {
+      font-size: 35px;
+    }
+  
+    p {
+      line-height: 1.5;
+      font-size: 20px;
+    }
+    .section_somos header p {
+      width: 700px;
+    }
+    .logo {
+      width: 400px;
+    }
+  
+    .logo img {
+      width: 100%;
+    }
+    .section_fazemos section {
+      height: 400px;
+      width: 350px;
+      justify-content: space-evenly;
+    }
+    .section_fazemos section figure img {
+      padding-bottom: 0;
+    }
+  }
