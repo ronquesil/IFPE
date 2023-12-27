@@ -1,0 +1,46 @@
+main {
+  background-color: beige;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "item1 item1 item2"
+    "item3 item4 item2";
+  justify-content: center;
+  align-content: center;
+  gap: 2vh;
+}
+
+.item1 {
+  grid-area: item1;
+  width: 60vw;
+  height: 45vh;
+}
+.item2 {
+  grid-area: item2;
+  width: 30vw;
+  height: 92vh;
+}
+.item3 {
+  grid-area: item3;
+  width: 29vw;
+  height: 45vh;
+}
+.item4 {
+  grid-area: item4;
+  width: 29vw;
+  height: 45vh;
+}
+
+section {
+  background-color: #808080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3vw;
+}
+
+h2 {
+  font-size: 80px;
+  color: #fff;
+}
