@@ -1,0 +1,77 @@
+main {
+  background-color: beige;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "item1 item2"
+    "item3 item4";
+  justify-content: center;
+  align-content: center;
+  gap: 1.5%;
+}
+
+section {
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #808080;
+  border-radius: 1vw;
+}
+
+h2 {
+  font-size: 80px;
+  color: #fff;
+}
+
+.item1 {
+  grid-area: item1;
+  height: 25vh;
+}
+.item2 {
+  grid-area: item2;
+  height: 25vh;
+}
+.item3 {
+  grid-area: item3;
+  height: 70vh;
+}
+.item4 {
+  grid-area: item4;
+  height: 70vh;
+  display: grid;
+  grid-template-areas:
+    "card1 card1"
+    "card2 card3";
+  gap: 2vw;
+  justify-content: center;
+  align-content: center;
+}
+
+.card1 {
+  grid-area: card1;
+  width: 38vw;
+}
+.card2 {
+  grid-area: card2;
+  width: 18vw;
+}
+.card3 {
+  grid-area: card3;
+  width: 18vw;
+}
+
+article {
+  background-color: rgb(92, 76, 55);
+  height: 30vh;
+  border-radius: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-size: 50px;
+  color: #fff;
+}
