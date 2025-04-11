@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro de Produtos</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro de Produtos</h1>
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+        <label for="nome">Nome do Produto:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="codigo">Código do Produto:</label>
+        <input type="text" id="codigo" name="codigo" required><br><br>
+
+        <label for="data_validade">Data de Validade:</label>
+        <input type="date" id="data_validade" name="data_validade" required><br><br>
+
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria" required>
+            <option value="brinquedo">Brinquedo</option>
+            <option value="roupa">Roupa</option>
+            <option value="ferramenta">Ferramenta</option>
+        </select><br><br>
+
+        <label for="grau_periculosidade">Grau de Periculosidade (0-10):</label>
+        <input type="number" id="grau_periculosidade" name="grau_periculosidade" min="0" max="10" required><br><br>
+
+        <label for="foto">Foto do Produto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*"><br><br>
+
+        <button type="submit">Cadastrar Produto</button>
+    </form>
+</body>
+</html>
